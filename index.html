@@ -83,7 +83,7 @@
     let page = parseInt(window.location.search.split("?")[1].split("&")[1].split("=")[1]);
     console.log(query, page)
     const fetchNews = async (query, pageNo)=>{
-        let a = await fetch(`/api?q=${query}&apiKey=dbe57b028aeb41e285a226a94865f7a7&pageSize=10&page=${pageNo}`)
+        let a = await fetch(`/api?q=${query}&apiKey=b4dd61e2e9874254a74389c9d89bde1b&pageSize=10&page=${pageNo}`)
         let r = await a.json()
         console.log(r)
         queryText.innerHTML = query.replace("+", " ")
